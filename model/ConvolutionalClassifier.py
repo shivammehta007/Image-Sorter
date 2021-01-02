@@ -3,7 +3,7 @@ import torch.nn.functional as F
 
 
 class ConvolutionalClassifier(nn.Module):
-    def __init__(self, dropout):
+    def __init__(self, dropout=0.4):
         super(ConvolutionalClassifier, self).__init__()
 
         self.cnn1 = nn.Sequential(
